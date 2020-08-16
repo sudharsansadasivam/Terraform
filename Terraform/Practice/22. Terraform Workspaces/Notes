@@ -1,0 +1,15 @@
+
+*******************************************************************************************************************************
+
+                                                    TERRAFORM WORKSPACES
+
+*********************************************************************************************************************************
+The remote backend can work with either a single remote Terraform Cloud workspace, or with multiple similarly-named remote workspaces (like networking-dev and networking-prod). 
+
+The workspaces block of the backend configuration determines which mode it uses:
+
+To use a single remote Terraform Cloud workspace, set workspaces.name to the remote workspace's full name (like networking).
+
+To use multiple remote workspaces, set workspaces.prefix to a prefix used in all of the desired remote workspace names. 
+      For example, set prefix = "networking-" to use Terraform cloud workspaces with names like networking-dev and networking-prod.
+      This is helpful when mapping multiple Terraform CLI workspaces used in a single Terraform configuration to multiple Terraform Cloud workspaces.

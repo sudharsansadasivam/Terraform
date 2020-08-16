@@ -1,0 +1,11 @@
+*****************************************************************************************************************
+
+                                        Terraform Load Order & Semantics
+
+*****************************************************************************************************************
+
+1. Structure and more Cleaner Code
+2. Multiple Configuration Files
+3. terraform loads all the .tf files and .tf.json files at a time 
+4. By Default stores all the files in alphabetical order .
+5. Segregate files based on usage and make clean code .

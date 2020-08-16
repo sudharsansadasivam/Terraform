@@ -1,0 +1,42 @@
+*************************************************************************************************
+
+                                TERRAFORM BUILT_IN FUNCTIONS
+
+************************************************************************************************
+
+1. We can only use terraform built-in functions
+2. Open terraform console to execute the commands.
+
+
+SPLIT FUNCTION:
+
+> split(",","S,u,d,h,a,r,s,a,n")
+[
+  "S",
+  "u",
+  "d",
+  "h",
+  "a",
+  "r",
+  "s",
+  "a",
+  "n",
+]
+
+MIN FUNCTION :
+
+> min(65,45,78)
+45
+
+MAX FUNCTION :
+> max(10,40,2000)
+2000
+
+
+
+LOOKUP FUNCTION:
+
+> lookup({a="ay", b="bee"}, "a", "what?")
+ay
+> lookup({a="ay", b="bee"}, "c", "what?")
+what?

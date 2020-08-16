@@ -1,0 +1,15 @@
+*****************************************************************************************************************
+
+                                                 TERRAFORM OUTPUT
+
+*****************************************************************************************************************
+
+
+Multiple Ways to check Outputs in Terraform :
+=============================================
+1. Outputs are useful to check the Arns or Ids or Names of the resources at a later point of time post creation date
+2. Terraform tfstate file we can check the output parameters to check the outputs 
+3.  
+CLI 
+  > terraform output iam_arn 
+  > terraform output iam_names

@@ -1,0 +1,26 @@
+*************************************************************************************************
+
+                                        Terraform Plan to File
+
+**************************************************************************************************
+
+
+1. Challenges in infrastructure versioning
+2. Need to be more accurate on the plan which was discussed and implemented 
+3. Backup of existing Infrastructure 
+4. Output of the terraform Plan will be a binary file (non-human readable format)
+
+
+CLI :
+===============================
+> terraform plan -out=filename
+> terraform apply filename
+
+Example:
+===================================
+> terraform plan -out=backup_infra
+> terraform apply .\backup_infra
+
+
+Note : if the existing configuration has t2.large and your outputted state file has t2.micro when we provide the terraform apply of the state file 
+we will get only t2.micro

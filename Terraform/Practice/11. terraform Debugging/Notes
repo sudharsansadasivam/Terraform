@@ -1,0 +1,23 @@
+************************************************************************************************
+                                    DEBUGGING
+
+************************************************************************************************
+
+Different Verbose for log levels
+TRACE 
+DEBUG
+INFO 
+WARN 
+ERROR
+
+
+IF TF_LOG IS SET TO DIFFERENT LOG LEVELS , TF_LOG IS THE DEFAULT ONE SET BY TERRAFORM 
+
+
+1. TO VIEW THE LOGS IN CONSOLE , need to set TF_LOG Environment Variable 
+===========================================================================
+export TF_LOG =TRACE
+
+2. TO WRITE LOGS TO log FILE ,AND Doesnt show up on CONSOLE OUTPUT
+===========================================================================
+ export TF_LOG_PATH =/tmp/terraform-crash.log

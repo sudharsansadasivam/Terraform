@@ -1,0 +1,18 @@
+*********************************************************
+                       Use Case
+*********************************************************                   
+
+Every Employee is assigned with an Identification number 
+
+Any Ec2 Instance should be created with identification Number only 
+
+
+variables.tf 
+
+variables instance_name{instancetype
+    type = number
+}
+
+
+terraform.tfvars
+instance_name = "Sudharsan_123"

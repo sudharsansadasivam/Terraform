@@ -1,0 +1,27 @@
+************************************************************************************************
+
+                                          TERRAFORM GRAPH  
+
+************************************************************************************************
+
+
+Terraform graph 
+     terraform graph command is used to generate a visual representation of either a configuration or execution plan
+     The output of the terraform graph is in the DOT Format , which can easily be converted to an image 
+     
+     Also it provides a dependancy graph to find the dependancies associated with terraform
+     
+     
+CLI :
+
+> terraform graph
+> terraform graph > graph.dot
+
+Launch Centos/ Amazon Linux And Execute below commands :
+=========================================================
+
+# Install Graphviz Package 
+> yum install graphviz
+
+# Convert .dot to .svg(image) format 
+> cat graph.dot | dot -Tsvg > graph.svg

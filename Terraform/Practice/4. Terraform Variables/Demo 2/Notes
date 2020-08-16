@@ -1,0 +1,22 @@
+===============================================================================================
+                                  Terraform Variables 
+================================================================================================
+
+Keep the file Name as terraform.tfvars . This the name that Terraform looks for .
+
+
+=============================================================
+
+
+custom.tfvars run Via the CLI 
+
+
+terraform plan -var-file="custom.tfvars"
+
+
+=============================================================
+
+
+NOTE :  File based variables overrides the Default Variables
+
+

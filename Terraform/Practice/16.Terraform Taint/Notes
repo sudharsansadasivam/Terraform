@@ -1,0 +1,24 @@
+*************************************************************************************************
+
+                                         TERRAFORM TAINT 
+
+*************************************************************************************************
+
+
+If there is any manual change done by users , we can mark the particular resource as Tainted or You can Destroy and recreate the resource
+
+ > terraform taint aws_instance.instance-1
+ 
+ 
+ After Executin the Above command , execute terraform plan to see the resource getting destroyed and getting recreated  : 
+ 
+ 
+ > terraform plan 
+
+
+Also, we can check the Tainted Resource in terraform state file , the status of the resource will be tainted 
+
+
+Use Cases :
+
+In many of the organizations, We should not use Terraform import , we should only use Terraform Taint to replace the existing resource

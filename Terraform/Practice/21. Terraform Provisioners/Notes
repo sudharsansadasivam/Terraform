@@ -1,0 +1,10 @@
+*****************************************************************************************************************************
+
+                                                       TERRAFORM PROVISIONERS
+
+*****************************************************************************************************************************
+
+
+1. Instance creation 
+2. Install softwares post ec2 instance creation 
+3. We can also have terraform execute remote execution script 

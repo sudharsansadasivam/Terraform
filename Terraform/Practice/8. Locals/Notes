@@ -1,0 +1,9 @@
+**************************************************************************************
+                                   LOCAL VALUES - TERRAFORM         
+
+****************************************************************************************
+
+
+1 . Local Values van be helpful  to avoid repeating the same values or expressions multiple times in a configuration
+2. If overused they can also make a configuration hard to read by future mainatiners by hiding the actual value used
+3. Use local values only in moderatioon, in situations where a single value or result is used in many places and that value is likely to be changed in future.

@@ -1,0 +1,12 @@
+*******************************************************************************
+                               TERRAFORM VALIDATE 
+    
+******************************************************************************
+
+
+CLI : 
+
+> terraform validate 
+
+1. Primarily Checks whether the Terraform is Syntactivally correct
+2. It also checks varius aspects such as unsupported Arguments , undeclared variables and others.

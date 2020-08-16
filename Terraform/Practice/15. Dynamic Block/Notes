@@ -1,0 +1,37 @@
+********************************************************************************************************
+
+                                              DYNAMIC BLOCK
+
+********************************************************************************************************
+
+Dynamic Blocks allows to dynamically construct repeatable nested Blocks which is supported inside
+     Supported Blocks:  
+      Resource
+      Data
+      Provider
+      provisioner 
+
+
+
+1. Dynamic Block is to have a cleaner code 
+2. Easy to understand 
+
+FOCUS IN DYNAMIC BLOCK:
+=======================
+1. for_each   ==> Performs Iteration for each of the arguments
+2. iterator   ==> customized for easy understanding 
+
+
+
+Sample Code :
+
+  dynamic "ingress" {
+    for_each = var.sg_ports
+    iterator = port
+    content {
+      from_port   = port.value
+      to_port     = port.value
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  }
