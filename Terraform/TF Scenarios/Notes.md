@@ -16,10 +16,9 @@ TF State Locka nd TF State Storage
 
 ```http
  terraform init -backend-config="access_key=<YOUR_ACCESS_KEY>" -backend-config="secret_key=<YOUR_SECRET_ACCESS_KEY>"
- 
+ ```
  
  ## Authors
 
 - [@sudharsansadasivam](https://www.github.com/sudharsansadasivam)
-```
 
